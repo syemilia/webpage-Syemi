@@ -1,0 +1,133 @@
+html{
+    scroll-behavior: smooth;
+   }
+   body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+   }
+   .container{
+    top: 50%;
+    left: 50%;
+    font-weight:bold;
+    font-family: Arial, Helvetica, sans-serif;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    position: absolute;
+    font-size: 70px;
+   }
+   .card{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height:500px;
+    width:750px;
+    transform: translate(-50%, -50%);
+    transform-style: preserve-3d;
+    perspective: 600px;
+    transition: .5s;
+   }
+   .card:hover .card-front{
+    transform: rotateX(-180deg);
+   }
+   .card:hover .card-back{
+    transform: rotateX(0deg);
+   }
+   .card-front{
+    height: 100%;
+    width: 100%;
+    background: url(horseback2.jpeg);
+    background-position: 50% 50%;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    transform: rotateX(0deg);
+    transition: .5s;
+    cursor: pointer;
+   }
+   .card-back{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    background: url(horseback1.jpeg);
+    backface-visibility: hidden;
+    transform: rotateX(180deg);
+    transition: .5s;
+    color: #fff;
+    text-align: center;
+   }
+   h2{
+    margin: 50% auto 50% auto;
+    font-size: 26px;
+   }
+   a{
+    height: 20px;
+    width: 20px;
+    padding: 5px 5px;
+    border-radius: 4px;
+    line-height: 20px;
+    color: #fff;
+    text-decoration: none;
+   }
+   nav{
+    width:100%;
+    background: #5E454B;
+    overflow: hidden;
+    position: fixed;
+    top:0;
+   }
+   ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+   }
+   li{
+    float: left;
+   }
+   a{
+    padding:20px;
+    width: 150px;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+   }
+   #section1{
+    height: 700px;
+    background: #CDBBA7;
+    display: inline-block;
+    width:100%;
+   }
+   #section2{
+    height: 700px;
+    background: #DAD0C2;
+    display: inline-block;
+    width:100%;
+   }
+   #section3{
+    height: 700px;
+    background: #F4DFD0;
+    display: inline-block;
+    width:100%;
+   }
+   #section4{
+    height: 700px;
+    background: #FDEFEF;
+    display: inline-block;
+    width:100%;
+   }
+   #section5{
+    height: 700px;
+    background: white;
+    display: inline-block;
+    width:100%;
+   }
+   h1{
+    margin: 100px;
+    text-align: center;
+    padding: 0;
+   }
